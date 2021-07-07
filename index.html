@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gridchallenge2</title>
+    <style>
+      .nav {
+        height: 640px;
+        width: 200px;
+        background-color: yellow;
+        padding: 20px;
+      }
+      .header {
+        height: 50px;
+        width: 800px;
+        background-color: yellow;
+        padding: 20px;
+      }
+      .article {
+        height: 450px;
+        width: 600px;
+        background-color: yellow;
+        padding: 20px;
+        margin: 5px 5px 5px 0px;
+      }
+      .ads {
+        height: 450px;
+        width: 149px;
+        background-color: yellow;
+        padding: 20px;
+        margin: 5px;
+      }
+      .footer {
+        height: 50px;
+        width: 800px;
+        background-color: yellow;
+        padding: 20px;
+      }
+      .side {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">Nav</div>
+      <div class="container">
+        <div class="header">Header</div>
+        <div class="side">
+          <div class="article">Article</div>
+          <div class="ads">Ads</div>
+        </div>
+        <div class="footer">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
